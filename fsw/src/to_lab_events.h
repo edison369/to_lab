@@ -45,6 +45,7 @@
 #define TO_LAB_REMOVEALLPKTS_INF_EID 17
 #define TO_LAB_NOOP_INF_EID          18
 #define TO_LAB_TBL_ERR_EID           19
+#define TO_RES_INF_EID		 20
 
 /******************************************************************************/
 

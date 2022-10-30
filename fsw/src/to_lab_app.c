@@ -365,6 +365,7 @@ int32 TO_LAB_Noop(const TO_LAB_NoopCmd_t *data)
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 int32 TO_LAB_ResetCounters(const TO_LAB_ResetCountersCmd_t *data)
 {
+    CFE_EVS_SendEvent(TO_RES_INF_EID, CFE_EVS_EventType_INFORMATION, "Reset Counters command");
     TO_LAB_Global.HkTlm.Payload.CommandErrorCounter = 0;
     TO_LAB_Global.HkTlm.Payload.CommandCounter      = 0;
     return CFE_SUCCESS;
