@@ -39,6 +39,7 @@
 #include "sample_app_msgids.h"
 #include "blinky_msgids.h"
 #include "imu_app_msgids.h"
+#include "temp_app_msgids.h"
 #include "rf_tlm_msgids.h"
 
 #if 0
@@ -56,6 +57,7 @@ TO_LAB_Subs_t TO_LAB_Subs = {.Subs = {/* CFS App Subscriptions */
                                       {CFE_SB_MSGID_WRAP_VALUE(SAMPLE_APP_HK_TLM_MID), {0, 0}, 4},
                                       {CFE_SB_MSGID_WRAP_VALUE(BLINKY_HK_TLM_MID), {0, 0}, 4},
                                       {CFE_SB_MSGID_WRAP_VALUE(IMU_APP_HK_TLM_MID), {0, 0}, 4},
+                                      {CFE_SB_MSGID_WRAP_VALUE(TEMP_APP_HK_TLM_MID), {0, 0}, 4},
                                       {CFE_SB_MSGID_WRAP_VALUE(RF_TLM_HK_TLM_MID), {0, 0}, 4},
 
 #if 0

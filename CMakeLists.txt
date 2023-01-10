@@ -9,7 +9,8 @@ include_directories(fsw/platform_inc)
 include_directories(${ci_lab_MISSION_DIR}/fsw/platform_inc)
 include_directories(${sample_app_MISSION_DIR}/fsw/platform_inc)
 include_directories(${blinky_MISSION_DIR}/fsw/platform_inc)
-include_directories(${altitude_app_MISSION_DIR}/fsw/platform_inc)
+include_directories(${imu_app_MISSION_DIR}/fsw/platform_inc)
+include_directories(${temp_app_MISSION_DIR}/fsw/platform_inc)
 include_directories(${rf_tlm_MISSION_DIR}/fsw/platform_inc)
 
 aux_source_directory(fsw/src APP_SRC_FILES)
@@ -18,4 +19,3 @@ aux_source_directory(fsw/src APP_SRC_FILES)
 add_cfe_app(to_lab ${APP_SRC_FILES})
 
 add_cfe_tables(TO_LAB_Subs fsw/tables/to_lab_sub.c)
-
