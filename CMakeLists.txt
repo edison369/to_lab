@@ -11,6 +11,7 @@ include_directories(${sample_app_MISSION_DIR}/fsw/platform_inc)
 include_directories(${blinky_MISSION_DIR}/fsw/platform_inc)
 include_directories(${imu_app_MISSION_DIR}/fsw/platform_inc)
 include_directories(${temp_app_MISSION_DIR}/fsw/platform_inc)
+include_directories(${altitude_app_MISSION_DIR}/fsw/platform_inc)
 include_directories(${rf_tlm_MISSION_DIR}/fsw/platform_inc)
 
 aux_source_directory(fsw/src APP_SRC_FILES)
